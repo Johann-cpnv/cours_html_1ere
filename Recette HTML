@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>ex 4</title>
+    
+    <meta charset="utf-8">
+    </head>
+  <body>
+    <h1>Recette</h1>
+    <p>Pour ceux qui désirent</p>
+  
+    <ul>
+        <li>600 grammes</li>
+        <li>...</li>
+        <li>1 dc de 
+            <a href="http://www.google.ch/search?q=kirsch" 
+            title="Recherche sur Google">kirsch</a></li>
+    </ul>
+  </body>
+</html>

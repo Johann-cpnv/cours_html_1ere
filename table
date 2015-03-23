@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <head>
+    <title>table</title>
+    <meta charset="utf-8">
+  </head>
+  
+  <body>
+    
+    <table border="solid">
+    <tr>
+        <thead>
+        <th>Feature</th>
+        <th>Internet explorer</th>
+        <th>Chrome</th>
+        <th>ff</th>
+        <th>opera</th>
+        <th>safari</th>
+    </tr>
+    </thead>
+    <tr>
+        <th>attributes</th>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+    </tr>
+    <tr>
+        <th>audio</th>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+        <td>100%</td>
+    </tr>
+    </table>
+  </body>
+</html>

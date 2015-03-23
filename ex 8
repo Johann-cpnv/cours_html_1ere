@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+  <head>
+    <title>table</title>
+    <meta charset="utf-8">
+  </head>
+  
+  <body>
+      <caption>Mon premier tableau</caption>
+    
+    <table border="solid">
+        
+    
+    
+    <tr>
+        
+        <td>lundi</td>
+        <td>mardi</td>
+    
+    </tr>
+    <tr>
+      
+        <td>martin</td>
+        <td rowspan="2">Julie</td>
+ 
+    </tr>
+    <tr>
+      
+        <td>après-midi</td>
+        <td>Didier</td>
+        
+    </tr>
+     <tr>
+      
+        <td>soir</td>
+        <td colspan="2">Martin</td>
+        
+    </tr>
+    </table>
+  </body>
+</html>
