@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>L'attribut list et la balise datalist</title>
+  </head>
+  <body>
+    <form method="post" action="unscript.php">
+      
+      <!--
+        L'attribut list permet de spécifier une liste qui permet à
+        l'utilisateur l'utilisateur de choisir une des valeurs. Dans ce cas,
+        contacts doit renvoyer vers une balise datalist avec un attribut id
+        équivalent
+      -->
+      <label>To: <input type="email" name="to" list="contacts"></label>
+      <br>
+      <!--
+        Une datalist peut être utilisée plusieurs fois ...
+      -->
+      <label>Cc: <input type="email" name="cc" list="contacts"></label>
+      <br>
+
+      <br><br><br>
+      <!--
+        Pas supporté par les navigateurs chromium et firefox !
+      -->
+      <label>Niveau: <input type="range" name="a" list="a-values" step="10"></label>
+      <br>
+
+      <input type="submit" name="submit" value="Envoyer">
+    </form>
+
+    <!-- 
+      L'attribut id permet d'identifier de manière unique sur une page une
+      balise. Il ne peut en aucun cas y avoir d'autres balises avec le même id.
+    -->
+    <datalist id="contacts">
+      <option value="automatique@cpnv.ch" label="La filière automatique">
+      <option value="electronique@cpnv.ch" label="La filière électronique">
+      <option value="info@cpnv.ch">
+      <option value="informatique@cpnv.ch" label="La filière informatique">
+      <option value="media@cpnv.ch" label="Les médiamaticiens">
+      <option value="support@cpnv.ch" label="Le support du CPNV">
+    </datalist>
+
+
+    <datalist id="a-values">
+      <option value="10" label="Low">
+      <option value="90" label="High">
+    </datalist>
+
+  </body>
+</html>

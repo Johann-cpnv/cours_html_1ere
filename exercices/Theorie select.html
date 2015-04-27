@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>La balise form</title>
+  </head>
+  <body>
+    <form method="post" action="unscript.php">
+
+      <label for="country">Pays :</label>
+      <!--
+        Select permet de définir une liste déroulante. Les valeurs
+        disponibles (options) sont spécifiée avec la balise option.
+        L'attribut value de la balise option est la valeur qui est envoyée
+        lorsque le formulaire est envoyé.
+      -->
+      <select id="country" name="country" required>
+        <!--
+          Il est parfois nécessaire, lorsqu'un choix par défaut n'est pas
+          possible, d'utiliser une option fictive, comme c'est le cas
+          ci-dessous. Le script recevant les données doit bien évidemment
+          prendre ceci en considération. La présence de required dans le
+          select ainsi que l'attribut value="" force l'utilisateur à
+          choisir une valeur dans la liste.
+        -->
+        <option value=""> Sélectionnez un pays </option>
+        <option value="DE"> Allemagne </option>
+        <option value="AT"> Autriche </option>
+        <option value="FR"> France </option>
+        <option value="IT"> Italie </option>
+        <option value="LI"> Liechtenstein </option>
+        <option value="CH"> Suisse </option>
+        <option value="SZ"> Swaziland </option>
+      </select>
+
+      <br>
+
+      <label for="unittype">Type d'unité</label>
+      <!--
+        Par défaut, la première option est sélectionnée par défaut, mais
+        cela peut être modifié grâce à l'attribut selected. Dans le cas
+        ci-dessous, Jedi sera sélectionné par défaut.
+      -->
+      <select id="unittype" name="unittype">
+        <option value="1"> Chevalier </option>
+        <option value="2"> Magicien </option>
+        <option value="3"> Orque </option>
+        <option value="4" selected> Jedi </option>
+        <option value="5"> Wookie </option>
+        <option value="6"> Elfe </option>
+      </select>
+
+      <br>
+
+
+      <label for="artist">Mes artistes préféré(e)s</label>
+      <!--
+        L'attribut multiple du select permet à l'utilisateur de choisir
+        plusieurs entrées. A noter qu'il est nécessaire d'ajouter [] au
+        nom de l'attribut name du select afin de permettre aux scripts
+        serveurs (PHP et autres) d'utiliser ce résultat.
+      -->
+      <select id="artist" name="artist[]" multiple>
+        <option value="1"> Mogwai </option>
+        <option value="2"> Sigur Ros </option>
+        <option value="3"> Muse </option>
+        <option value="4"> Flobots </option>
+        <option value="5"> Heidi Happy </option>
+        <option value="6"> Sophie Hunger </option>
+        <option value="7"> Lunik </option>
+      </select>
+
+      <br>
+        <button type="submit">
+            <img src="./images/cpnv.png" alt="
+
+    </form>
+  </body>
+</html>

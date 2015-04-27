@@ -1,7 +1,7 @@
 <html>
   <head>
     <title>exercice 1</title>
-    <meta charset="utf -8">
+    <meta charset="utf-8">
   </head>
   <body>
     <form method="post"
@@ -15,16 +15,46 @@
                 placeholder="Votre nom"
                 maxlength="50"
                 required>
-                
+            <br>
+            <br>
                 Age:
         <input type="number"
                 name="age"
                 min="16"
                 max="29"
                 required>
-                
+                <br>
+                <br>
+        
+            <input type="radio" name"masculin">Masculin
+            <br>
+            <input type="radio" name"féminin">Féminin
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         <input type="submit">
-                
+        <br>
+        <input type="checkbox" name"accept_cg">J'accepte les conditions
+            <br>
+            <input type="checkbox" name"Newsletter">Newslettes
+            <br>
+             <br>
+            <br>
+          
+            <br>
+                <label>To: <input type="email" name="to" list="contacts"></label>
+                    <br>
+                <label>Cc: <input type="email" name="cc" list="contacts"></label>
+                    <br>
+    <datalist id="contacts">
+      <option value="info@cpnv.ch">
+      <option value="media@cpnv.ch" label="Les médiamaticiens">
+      <option value="meca@cpnv.ch" label="Le support du CPNV">
+      <option value="help@cpnv.ch" label="Le support du CPNV">
+      <option value="electronique@cpnv.ch" label="Le support du CPNV">    
+    </datalist>
     
     
     
